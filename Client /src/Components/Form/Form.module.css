@@ -1,0 +1,238 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    position: relative;
+    bottom: -15em;
+    left:160%;
+    animation: scale 2s 
+}
+
+.h1{
+    
+}
+
+.labelContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 25em;
+    border-radius: 2%;
+    justify-content: center;
+}
+.h2{
+    margin-left: 1em;
+    color: #a09e9e;
+    position: absolute;
+    
+}
+label{
+ background-color:transparent ;
+ position: absolute;
+ font-size: 1.3em;
+ transform-origin: top left;
+ text-transform: uppercase;
+ margin-left:-70%;
+
+
+}
+input{
+border: 2px black solid;
+outline: none;
+background-color: white;
+height: 2em;
+padding: 0.8em 0.4em 0.2em;
+width: 100%;
+font-size: 1.1em;
+line-height: 1.5em;
+border-radius: 5px;
+
+}
+.span{
+    opacity: 0;
+    position: absolute;
+    top: 0.4rem;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    left: 0;
+    font-size: 0.8em ;
+    transition: all 0.5s;
+}
+
+.clicked{
+    opacity: 1;
+}
+
+.hidden{
+    display:none
+}
+
+.labelContainer1{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    margin-bottom: 0.5em;
+    
+}
+
+.button{
+    margin-top: 1.5em;
+    border: solid #000000 2px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: transparent;
+    font-size: 2em;
+    padding: 0.5em;
+    transition: 0.5s;
+}
+.button:hover{
+    color: #1B863C;
+    border-color: #1B863C;
+}
+
+body {
+    background-color: black;
+    font-size: 0.9vw;
+  }
+  .portalContainer {
+    height: 100vh;
+    display: flex;
+    width: 100%
+  }
+  .title {
+    position: absolute;
+    top:0.5em;
+    width: 100%;
+    text-align: center;
+    font-family: 'Get Schwifty';
+    font-size: 10em;
+    color: #08BAE3;
+    z-index: 50;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+    left: 0
+  }
+   
+  .spanTitle{
+    font-size: 0.5em;
+    
+  }
+  .title.middle {
+    -webkit-text-stroke: 0.1em #FFF765;
+    z-index: 49;
+  }
+  
+  .title.bottom {
+    -webkit-text-stroke: 0.4em black;
+    z-index: 48;
+  }
+  
+  .portal {
+    position: absolute;
+    left: 20%;
+    animation: rotate 6s infinite linear, scale 1s;
+    background-color: #66BA4F;  
+    box-shadow: 0px 0px 40px 10px #448C3F;
+    height: 60em;
+    width: 60em;
+    border-radius: 50%;
+    margin: auto;
+    background:
+      radial-gradient(circle at 77% 80%, #FDFEB4 2.5%, transparent 2.5%),
+      radial-gradient(circle at 75% 83%, #FDFEB4 2%, transparent 2%),
+      radial-gradient(circle at 79% 83%, #FDFEB4 1%, transparent 1%),
+      radial-gradient(circle at 45% 13%, #FFFFD5 1.5%, transparent 1.5%),
+      radial-gradient(circle at 42% 13%, #FFFFD5 2%, transparent 2%),
+      radial-gradient(circle at 38% 14%, #FFFFD5 1.5%, transparent 1.5%),
+      radial-gradient(circle at 20% 24%, #FDFEB4 1%, transparent 1%),
+      radial-gradient(circle at 21% 23%, #FDFEB4 1%, transparent 1%),
+      radial-gradient(circle at 51% 13%, #FDFEB4 1%, transparent 1%),
+      radial-gradient(circle at 81% 33%, #FDFEB4 1%, transparent 1%),
+      radial-gradient(circle at 85% 36%, #FDFEB4 2%, transparent 2%),
+      radial-gradient(circle at 21% 46%, #FDFEB4 1%, transparent 1%),
+      radial-gradient(circle at 20% 51%, #FDFEB4 2%, transparent 2%),
+      radial-gradient(circle at 53% 51%, transparent 64%, #43A93E 64%),
+      radial-gradient(circle at 47% 59%, transparent 64%, #43843E 64%),
+      radial-gradient(circle at 47% 60%, transparent 59%, #1A9042 59%),
+      radial-gradient(circle at 50% 59%, transparent 55%, #1B863C 55%),
+      radial-gradient(circle at 45% 60%, transparent 55%, #399C49 55%),
+      radial-gradient(circle at 47% 60%, transparent 46%, #1A9042 46%),
+      radial-gradient(circle at 46% 55%, transparent 43%, #75B03B 43%),
+      radial-gradient(circle at 36% 55%, transparent 43%, #A9CB48 43%),
+      radial-gradient(circle at 50% 60%, transparent 40%, #66BA4F 40%),
+      radial-gradient(circle at 50% 53%, transparent 40%, #E5E051 37%),
+      radial-gradient(circle at 30% 48%, transparent 40%, #EAF157 37%),
+      radial-gradient(circle at 57% 69%, transparent 40%, #EAF157 40%),
+      radial-gradient(circle at 40% 88%, transparent 40%, #E9E072 37%),
+      radial-gradient(circle at 67% 54%, transparent 40%, #FAEB7B 37%),
+      radial-gradient(circle at 49% 35%, transparent 40%, #FFF8C5 37%),
+      radial-gradient(circle at 79% 59%, transparent 40%, #FFFE9C 37%),
+      radial-gradient(circle at 50% 50%, #FDFEB4 100%, #FDFEB4 100%)
+      ;
+  }
+  @font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff') format('woff');
+  }
+  
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+.estrellas {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+body {
+background:#000 url(http://1.bp.blogspot.com/-q7NYia_DjQI/U4t7_J4gwwI/AAAAAAAAMKo/nru4YxfjK6I/s1600/estrellas.png) repeat top center;
+}
+
+.estrellas{
+background:transparent url(http://3.bp.blogspot.com/-FwB8aSiMBmI/U4t9MkimRrI/AAAAAAAAMK0/FAlqX8ZFyu8/s1600/twinkling.png) repeat top center;
+z-index:-2;
+
+-moz-animation:move-twink-back 100s linear infinite;
+-ms-animation:move-twink-back 100s linear infinite;
+-o-animation:move-twink-back 100s linear infinite;
+-webkit-animation:move-twink-back 100s linear infinite;
+animation:move-twink-back 100s linear infinite;
+}
+

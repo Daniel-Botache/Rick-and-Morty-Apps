@@ -1,0 +1,149 @@
+.container {
+  padding: 2rem;
+  margin-top: 6rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 0.2rem rgba(81, 255, 110, 0.461),
+    0 0 0.2rem rgba(81, 255, 110, 0.461), 0 0 2rem rgba(81, 255, 110, 0.461);
+  animation: color 2s infinite linear;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  top: 0%;
+  right: 0%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.detail div {
+  width: fit-content;
+  margin-top: 3rem;
+  padding-right: 8rem;
+}
+
+.container div h1 {
+  margin: 0;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: black;
+  text-shadow: 0 0 0.2rem #33ff009b, 0 0 0.1rem #33ff009b, 0 0 1rem #33ff009b;
+}
+
+.container div label {
+  width: fit-content;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  color: black;
+  text-shadow: 0 0 0.2rem #33ff009b, 0 0 0.1rem #33ff009b, 0 0 1rem #33ff009b;
+  border-radius: 0.3rem;
+  font-family: "Rubik Glitch", cursive;
+}
+
+.container div p {
+  width: fit-content;
+  color: aliceblue;
+  font-family: "Encode Sans", sans-serif;
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+  font-size: 2.5em;
+}
+
+.containerImg {
+  display: flex;
+  justify-content: center;
+}
+.container div img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 9999rem;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.container div img:hover {
+  transform: scale(1.05);
+  color: white;
+  background-color: #33ff009b;
+  box-shadow: 0 0 1rem #33ff009b, 0 0 4rem #33ff009b, 0 0 8rem #33ff009b;
+}
+
+.link {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.container div button {
+  margin-left: 1rem;
+  border-radius: 5rem;
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 2.2rem;
+  background: linear-gradient(rgba(81, 150, 110, 0.461), rgba(0, 0, 0, 0));
+  border: transparent;
+
+  overflow: hidden;
+  transition: 300ms;
+}
+.container div button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: white;
+  background-color: #33ff0044;
+  box-shadow: 0 0 1rem #33ff009b, 0 0 4rem #33ff009b, 0 0 8rem #33ff009b;
+}
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+.estrellas {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+body {
+background:#000 url(http://1.bp.blogspot.com/-q7NYia_DjQI/U4t7_J4gwwI/AAAAAAAAMKo/nru4YxfjK6I/s1600/estrellas.png) repeat top center;
+}
+
+.estrellas{
+background:transparent url(http://3.bp.blogspot.com/-FwB8aSiMBmI/U4t9MkimRrI/AAAAAAAAMK0/FAlqX8ZFyu8/s1600/twinkling.png) repeat top center;
+z-index:-2;
+
+-moz-animation:move-twink-back 100s linear infinite;
+-ms-animation:move-twink-back 100s linear infinite;
+-o-animation:move-twink-back 100s linear infinite;
+-webkit-animation:move-twink-back 100s linear infinite;
+animation:move-twink-back 100s linear infinite;
+}
+
+@keyframes color{
+  from{
+    box-shadow: 0 0 0.2rem rgba(81, 255, 110, 0.461),
+    0 0 0.2rem rgba(81, 255, 110, 0.461), 0 0 2rem rgba(81, 255, 110, 0.461);
+  }to{
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.461),
+    0 0 0.2rem rgba(0, 0, 0, 0.461), 0 0 2rem rgba(0, 0, 0, 0.461);
+  }
+}

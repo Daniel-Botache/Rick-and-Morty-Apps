@@ -1,0 +1,52 @@
+.navContainer {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  padding-top: 1em;
+  z-index: 999;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.navLink{
+  font-size: 1.5em;
+  text-decoration: none;
+  color: aqua;
+}
+.navLink:hover{
+  color: #FFF765
+}
+
+.title {
+  position: absolute;
+  top:0.5em;
+  width: 100%;
+  text-align: center;
+  font-family: 'Get Schwifty';
+  font-size: 2.5em;
+  color: #08BAE3;
+  z-index: 50;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+  left: 0
+}
+ 
+.spanTitle{
+  font-size: 0.5em;
+  
+}
+.title.middle {
+  -webkit-text-stroke: 0.1em #FFF765;
+  z-index: 49;
+}
+
+.title.bottom {
+  -webkit-text-stroke: 0.4em black;
+  z-index: 48;
+}
+
+.tittleContainer{
+  position: relative;
+  width: 11em;
+}
